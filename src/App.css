@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  --headerWidth: 500px;
+}
+
+.logo {
+  margin: 50px auto;
+}
+
+.logo h1 {
+  text-align: center;
+  font-size: 60px;
+  font-family: 'Edwardian Script ITC';
+  font-weight: bolder;
+}
+
+.search {
+  width: var(--headerWidth);
+  margin: auto;
+}
+
+.searchInputField,
+.searchButton,
+.searchButtonActive {
+  display: inline-block;
+  height: 50px;
+  vertical-align: middle;
+}
+
+.searchInputField {
+  border-right: none;
+  margin-right: -1px;
+  padding-left: 8px;
+  width: 440px;
+  border: 3px solid rgb(183, 181, 181);
+  background-color: rgb(241, 239, 239);
+  border-top-left-radius: 9px;
+  border-bottom-left-radius: 9px;
+}
+
+.searchButton,
+.searchButtonActive {
+  color: white;
+  font-size: 25px;
+  width: 60px;
+  border-top-right-radius: 9px;
+  border-bottom-right-radius: 9px;
+}
+
+.searchButton {
+  border: 2px solid rgb(132, 131, 131);
+  background-color: rgb(132, 131, 131);
+}
+
+.searchButtonActive {
+  border: 2px solid black;
+  background-color: black;
+}
+
+.searchButtons {
+  width: var(--headerWidth);
+  padding: 0;
+  margin: 40px auto;
+}
+
+.searchButtons a {
+  text-decoration: none;
+  color: #fff;
+  font-family: 'Forte';
+}
+
+.searchButtons p {
+  display: inline-block;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  width: 22%;
+  margin: 7px;
+  background-color: black;
+}
+
+.pictieName {
+  width: var(--headerWidth);
+  margin: 50px auto;
+  text-align: center;
+  font-family: 'Forte';
+}
+
+.pictures {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+
+.pictures li {
+  display: inline-block;
+  width: 220px;
+  height: 180px;
+  margin: 15px;
+  text-align: center;
+  overflow: hidden;
+  list-style-type: none;
+}
+
+.pictures img:hover {
+  transform: scale(1.5);
+  transition: 1.2s;
+}
+
+.not-found,
+.noImages {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  padding-top: 60px;
+  font-family: 'Kristen ITC';
+}
+
+.not-found {
+  font-size: 30px;
+}
+
+.photoOpenBackdrop {
+  width: 100%;
+  background-color: rgba(229, 225, 225, 0.723);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.photoOpen {
+  margin: auto;
+  width: 800px;
+  height: 500px;
+  padding-top: 50px;
+}
+
+.photoOpenHead {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: inherit;
+  height: 40px;
+  background-color: black;
+  color: #fff;
+}
+
+.photoOpenHead button {
+  position: absolute;
+  right: 5px;
+  width: 30px;
+  height: 30px;
+  background-color: red;
+  border: none;
+  color: #fff;
+}
+
+.photoOpenBody {
+  text-align: center;
+  overflow: hidden;
+  background-color: black;
+}
