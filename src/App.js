@@ -2,9 +2,9 @@ import React from 'react'
 import { Routes, Route, useLocation, useSearchParams } from 'react-router-dom'
 import Headerlayout from './component/HeaderLayout'
 import Item from './component/Item'
-import './App.css'
 import NotFound from './component/NotFound'
 import PhotoOpen from './component/PfotoOpen'
+import './App.css'
 
 function App() {
   const items = [

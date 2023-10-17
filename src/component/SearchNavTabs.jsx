@@ -1,10 +1,7 @@
-import { Link, useResolvedPath } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import '../../src/App.css'
-import { usePhotoContext } from '../Context/PhotoContext'
 
 const SearchNavTabs = () => {
-  // const usePath = useResolvedPath().pathname.substring(1)
-
   const handleSubmit = (e) => {
     e.preventDefault()
   }
