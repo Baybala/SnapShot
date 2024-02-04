@@ -14,7 +14,7 @@ export function PhotoContextProvider({ children }) {
   const searchCall = (searchInput) => {
     axios
       .get(
-        `https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=80e26ad9f79268390044a79b4cd40f35&tags=${searchInput}&per_page=24&tag=bird&nojsoncallback=1&format=json`,
+        `https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=cc693ef84add937b13756268595ef26b&tags=${searchInput}&per_page=24&tag=bird&nojsoncallback=1&format=json`,
       )
       .then((response) => {
         setPhotoData(response.data.photos.photo)
